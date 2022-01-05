@@ -21,6 +21,8 @@
     <link rel="icon" type="image/x-icon" href="assets/img/icon/favicon.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <!-- Comment : https://valine.js.org/quickstart.html -->
+    <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet"
         type="text/css" />
@@ -61,6 +63,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
                 <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#timelines">Timelines</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#comments">Comments</a></li>
             </ul>
         </div>
     </nav>
@@ -548,17 +551,17 @@
                     <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated" role="progressbar"
                         style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h3 class="mb-3">Japanese</h3>
+                <h3 class="mb-3" style="text-transform: capitalize;">Japanese</h3>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
                         style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h3 class="mb-3">English</h3>
+                <h3 class="mb-3" style="text-transform: capitalize;">English</h3>
                 <div class="progress">
                     <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
                         style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <h3 class="mb-3">Chinese</h3>
+                <h3 class="mb-3" style="text-transform: capitalize;">Chinese</h3>
                 <ul class="fa-ul mb-0">
                     <li>
                         <span class="fa-li subheading mb-0"><i class="fas fa-check text-danger"></i></span>
@@ -759,7 +762,7 @@
         <!-- Interests -->
         <section class="resume-section" id="interests">
             <div class="resume-section-content" style="font-size: x-large;">
-                <h2 class="mb-5">Interests Tag</h2>
+                <h2 class="mb-5">Interest Tags</h2>
                 <p>
                     <span class="badge rounded-pill bg-primary">Open Source Development</span>
                     <span class="badge rounded-pill bg-success">Learning New Stuff</span>
@@ -874,11 +877,11 @@
                                         <div class="timeline-year">2020</div>
                                         <h3 class="title">A Vital Exam & Fitness</h3>
                                         <p class="description">
-                                            It didn't turn out the result I wanted. but that motivated me to change,
+                                            Unfortunately, This exam didn't turn out the result I wanted, but that motivated me to change,
                                             such as I begin to fitness every day and pay attention to the daily rest and
                                             learn how to play guitar.
-                                            Moreover, I learned the Vue framework, Docker, CTF, Golang, Raspberry Pi,
-                                            and created LeetCode gitbook site, etc.
+                                            Moreover, I learned to drive, touch Vue, Docker, CTF, Golang, Raspberry Pi,
+                                            and created LeetCode Gitbook site, etc.
                                         </p>
                                     </div>
                                 </div>
@@ -887,25 +890,44 @@
                                         <div class="timeline-year">2019</div>
                                         <h3 class="title">Devote myself to Github</h3>
                                         <p class="description">
-                                            776 contributions so learned more skills
+                                            There have been 776 contributions to Github this year, so learned more skills, 
+                                            such as Ubuntu, Java Swing, Games with C, NCRE, Hexo Page, JSP, Servlet, MySQL, Spring, SpringMVC, 
+                                            Mybatis, SpringBoot, Shiro, JDK, Crawler, Design Pattern, 
+                                            Join some open source organizations,
+                                            and Penetration Testing with Kali Linux.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="timeline">
                                     <div href="#" class="timeline-content">
                                         <div class="timeline-year">2018</div>
-                                        <h3 class="title">Begin To Code</h3>
+                                        <h3 class="title">Learn To Code & Joined GitHub</h3>
                                         <p class="description">
-                                            Joined GitHub on September 22
+                                            Thanks a lot for <a href="https://youtu.be/1XXkl6QUfEI" target="_blank" class="text-black">Anduin's suggestions, </a>
+                                            let me know how to be a software enginner and what's Github, 
+                                            that's so vital to my learning coding and skills.
+                                            So what I learned this year ? 
+                                            the answer was learned C and Java programming language, 
+                                            a little bit knowledage about Data Structures and Algorithms,
+                                            and coded my first project in Java Swing, which is a desktop app named student information management system.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="timeline">
                                     <div href="#" class="timeline-content">
-                                        <div class="timeline-year">2017</div>
-                                        <h3 class="title">Go with the flow</h3>
+                                        <div class="timeline-year">14-17</div>
+                                        <h3 class="title">Travel & Go with the flow</h3>
                                         <p class="description">
-                                            updating
+                                            updating updating updating updating updating updating updating updating
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="timeline">
+                                    <div href="#" class="timeline-content">
+                                        <div class="timeline-year">10-13</div>
+                                        <h3 class="title">Addicted To Games Badly</h3>
+                                        <p class="description">
+                                            updating updating updating updating updating updating updating updating
                                         </p>
                                     </div>
                                 </div>
@@ -915,11 +937,41 @@
                 </div>
             </div>
         </section>
+        <!-- Comments -->
+        <section class="resume-section" id="comments">
+            <div class="resume-section-content" style="font-size: x-large;">
+                <h2 class="mb-5">Comments</h2>
+                <!-- <head>
+                    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+                </head> -->
+                <div id="vcomments"></div>
+                <!-- <body> -->
+                    
+                    <!-- <script>
+                        new Valine({
+                            el: '#vcomments',
+                            appId: '1cegisKhT2qMh6zwn57kyrzm-gzGzoHsz',
+                            appKey: 'jjpnMhqKH6DWhQKDVbwMWQ3O'
+                        })
+                    </script> -->
+                <!-- </body> -->
+            </div>
+        </section>
+        <hr class="m-0" />
+        <hr class="m-0" />
     </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Comment : https://valine.js.org/quickstart.html -->
+    <script>
+        new Valine({
+            el: '#vcomments',
+            appId: '1cegisKhT2qMh6zwn57kyrzm-gzGzoHsz',
+            appKey: 'jjpnMhqKH6DWhQKDVbwMWQ3O'
+        })
+    </script>
     <!-- Timeline -->
     <!-- https://bestjquery.com/tutorial/timeline/demo141/ -->
     <style type="text/css">
