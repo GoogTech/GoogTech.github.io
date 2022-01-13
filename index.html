@@ -703,6 +703,10 @@
     <script>
         el = document.getElementById("likeNumber")
         el2 = document.getElementById("clickedLike")
+        // init likeNumber
+        Vilike.info('googtech', 'resume').then((result) => {
+            el.innerHTML = result.value
+        });
         // update likeNumber
         function countLike() {
             Vilike.exec('googtech', 'resume', 1).then((result) => {
