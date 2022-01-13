@@ -679,7 +679,7 @@
                     !
                 </span>
             </button>
-            <p id="clickedLike" style="margin-top: 5px;"></p>
+            <p id="clickedLike" style="margin-top: 10px;"></p>
         </div>
     </div>
     <hr class="m-0" />
@@ -703,13 +703,20 @@
     <script>
         el = document.getElementById("likeNumber")
         el2 = document.getElementById("clickedLike")
+        // update likeNumber
         function countLike() {
             Vilike.exec('googtech', 'resume', 1).then((result) => {
                 if (true == result.isHit) {
-                    el2.innerHTML = "Thanks bro, You've already clicked on it !"
+                    alert("Thanks bro, You've already clicked on it !", "warning")
                 }
                 el.innerHTML = result.value
             });
+        }
+        // warning
+        function alert(message, type) {
+            var wrapper = document.createElement('div')
+            wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+            el2.append(wrapper)
         }
     </script>
     <!-- Comment JS -->
