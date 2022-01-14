@@ -709,12 +709,15 @@
         });
         // update likeNumber
         function countLike() {
-            Vilike.exec('googtech', 'resume', 1).then((result) => {
-                if (true == result.isHit) {
-                    alert("Thanks bro, You've already clicked on it !", "warning")
-                }
-                el.innerHTML = result.value
-            });
+            if ('resume' != localStorage.getItem('googtech')) {
+                Vilike.exec('googtech', 'resume', 1).then((result) => {
+                    if (true == result.isHit) {
+                        el.innerHTML = result.value
+                    }
+                });
+            } else {
+                alert("Thanks bro, You've already clicked on it !", "warning")
+            }
         }
         // warning
         function alert(message, type) {
