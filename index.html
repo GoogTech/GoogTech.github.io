@@ -20,7 +20,7 @@
     </script>
     <link rel="icon" type="image/x-icon" href="assets/img/icon/favicon.png" />
     <!-- Font Awesome icons (free version) -->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v6.0.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Comment JS -->
     <!-- https://valine.js.org/quickstart.html -->
     <script src='https://unpkg.com/valine/dist/Valine.min.js'></script>
@@ -115,7 +115,28 @@
                     <a class="social-icon" href="https://www.linkedin.cn/in/googtech" target="_blank"><i
                             class="fab fa-linkedin-in"></i></a>
                     <a class="social-icon" href="https://space.bilibili.com/364361791" target="_blank"><i
-                            class="fab fa-youtube"></i></a>
+                            class="fab fa-bilibili"></i></a>
+                    <a id="keep-icon" class="social-icon" target="_blank">
+                        <i class="fab fa-kickstarter"></i>
+                        <div id="social-media">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/googtech/googtech.github.io@gh-pages/assets/img/social-media-code-mini/keep-code.jpg">
+                        </div>
+                    </a>
+                    <a id="wechat-icon" class="social-icon" target="_blank">
+                        <i class="fab fa-weixin"></i>
+                        <div id="social-media">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/googtech/googtech.github.io@gh-pages/assets/img/social-media-code-mini/wechat-code.jpg">
+                        </div>
+                    </a>
+                    <a id="qq-icon" class="social-icon" target="_blank">
+                        <i class="fab fa-qq"></i>
+                        <div id="social-media">
+                            <img
+                                src="https://cdn.jsdelivr.net/gh/googtech/googtech.github.io@gh-pages/assets/img/social-media-code-mini/qq-code.jpg">
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -740,6 +761,34 @@
     <!-- Tidio Chat -->
     <!-- https://www.tidio.com/ -->
     <script src="https://code.tidio.co/touraksdimgashyfmvf2ychaw0wjqep3.js" async></script>
+    <!-- Social-Media Code CSS -->
+    <!-- https://www.cnblogs.com/liuawen/p/12854059.html -->
+    <style>
+        #social-media {
+            display: none;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            position: absolute;
+            bottom: 110px;
+        }
+
+        #social-media img {
+            width: 110px;
+        }
+
+        #keep-icon:hover>#social-media {
+            display: block;
+        }
+
+        #wechat-icon:hover>#social-media {
+            display: block;
+        }
+
+        #qq-icon:hover>#social-media {
+            display: block;
+        }
+    </style>
     <!-- Timeline CSS -->
     <!-- https://bestjquery.com/tutorial/timeline/demo141/ -->
     <style type="text/css">
